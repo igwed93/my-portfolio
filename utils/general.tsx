@@ -1,4 +1,4 @@
-import { Links } from "./static"
+import { Links } from "../app/(data)/static"
 import Link from "next/link"
 
 export function NavBar() {

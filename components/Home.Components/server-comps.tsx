@@ -1,5 +1,5 @@
-import { ProjectCardProps } from "@/types/types";
-import { FeaturedProjects } from "@/utils/static";
+//import { ProjectCardProps } from "@/types/project";
+import { FeaturedProjects } from "@/app/(data)/static";
 
 export function HeroSection() {
     return (
@@ -33,33 +33,32 @@ export function ProjectSection() {
         <section id="projects" className="px-4 md:px-30 bg-black py-3 pt-10">
             <div className="flex flex-col w-full">
                 <h2 className="text-white text-2xl md:text-4xl font-bold">My Projects</h2>
-                <p className="text-white text-md md:text-[16.5px] md:w-1/2 mt-5">Find out about my works: read through my case studies,
-                 have a look at final designs and try out web applications I’ve built.</p>
+                
             </div>
-            <div className="bg-black grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 mb-20">
+            {/* <div className="bg-black grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 mb-20">
                 {FeaturedProjects.map((project) => (
                     <ProjectCard key={project.title} {...project} />
                 ))}
-            </div>
+            </div> */}
         </section>
     );
 }
 
 
-function ProjectCard({ title, description, image, link }: ProjectCardProps) {
-    return (
-        <div className="bg-black shadow-lg p-6 flex flex-col items-center text-center border border-[#C1F025] rounded-3xl">
-            <h1 className="text-2xl text-white font-bold mb-2">{title}</h1>
-            <div className="w-full h-[400px] rounded-md mb-4 overflow-hidden flex items-center justify-center">
-                <img 
-                    src={image}
-                    alt={title}
-                    className="w-full h-full object-contain transition-transform duration-300 ease-in-out hover:scale-110"
-                />
-            </div>
-            <h3 className="text-xl font-bold mb-2">{title}</h3>
-            <p className="text-white mb-4">{description}</p>
-            <a href={link} className="mt-6 px-6 py-3 bg-[#C1F025] text-black font-bold rounded shadow-lg hover:border-[#C1F025] hover:border-1 hover:bg-black hover:text-[#C1F025] shadow-[3px_3px_0_0_rgba(234,179,8,0.7)] transition duration-300">Learn more</a>
-        </div>
-    );
-}
+//function ProjectCard({ title, description, image, link }: ProjectCardProps) {
+//    return (
+//        <div className="bg-black shadow-lg p-6 flex flex-col items-center text-center border border-[#C1F025] rounded-3xl">
+//            <h1 className="text-2xl text-white font-bold mb-2">{title}</h1>
+//            <div className="w-full h-[400px] rounded-md mb-4 overflow-hidden flex items-center justify-center">
+//                <img 
+//                    src={image}
+//                    alt={title}
+//                    className="w-full h-full object-contain transition-transform duration-300 ease-in-out hover:scale-110"
+//                />
+//            </div>
+//            <h3 className="text-xl font-bold mb-2">{title}</h3>
+//            <p className="text-white mb-4">{description}</p>
+//            <a href={link} className="mt-6 px-6 py-3 bg-[#C1F025] text-black font-bold rounded shadow-lg hover:border-[#C1F025] hover:border-1 hover:bg-black hover:text-[#C1F025] shadow-[3px_3px_0_0_rgba(234,179,8,0.7)] transition duration-300">Learn more</a>
+//        </div>
+//    );
+//}
