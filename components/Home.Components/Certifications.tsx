@@ -3,7 +3,7 @@ import { certs } from "@/app/(data)/certifications";
 export default function Certifications() {
   return (
     <section className="py-12 px-12">
-      <h2 className="text-3xl md:text-5xl font-bold mb-6">Certifications</h2>
+      <h2 className="text-3xl md:text-5xl font-bold mb-6 text-center">Certifications</h2>
       <div className="grid sm:grid-cols-2 gap-6">
         {certs.map((c) => (
           <a

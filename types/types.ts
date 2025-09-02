@@ -22,3 +22,10 @@ export type Experience = {
     period: string;
     points: string[];
 }
+
+// learning type
+export type Learning = {
+    title: string;
+    provider: string;
+    link: string;
+}

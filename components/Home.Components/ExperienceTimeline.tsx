@@ -2,7 +2,7 @@ import { experience } from "@/app/(data)/experience";
 
 export default function ExperienceTimeline() {
   return (
-    <section className="py-12 px-12">
+    <section className="py-12 px-12 flex flex-col justify-center items-center">
       <h2 className="text-3xl md:text-5xl font-bold mb-6">Experience</h2>
       <ol className="relative border-s border-white/10">
         {experience.map((e) => (

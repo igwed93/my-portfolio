@@ -1,18 +1,13 @@
-import { HeroSection, ProjectSection } from "@/components/Home.Components/server-comps"
+import { HeroSection } from "@/components/Home.Components/server-comps"
 import { TransitionSection } from "@/components/Home.Components/client-comps"
-import ProjectsGrid from "@/components/Home.Components/ProjectsGrid"
-import Certifications from "@/components/Home.Components/Certifications"
-import ExperienceTimeline from "@/components/Home.Components/ExperienceTimeline"
+import SectionTabs from "@/components/Home.Components/SectionTabs"
 
 export default function HomePage() {
   return (
     <main>
       <HeroSection />
       <TransitionSection />
-      <ProjectSection />
-       <ProjectsGrid />
-       <Certifications />
-       <ExperienceTimeline />
+      <SectionTabs />
     </main>
   )
 }

@@ -10,4 +10,9 @@ export const certs: Certification[] = [
       issuer: "Google",
       link: "https://grow.google/certificates/cybersecurity/",
     },
+    {
+      name: "Backend Development",
+      issuer: "Axia Africa",
+      link: "https://axia.africa/courses/backend-development/",
+    }
 ];

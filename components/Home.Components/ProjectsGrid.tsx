@@ -3,9 +3,9 @@ import Link from "next/link";
 import Image from "next/image";
 import { projects } from "@/app/(data)/projects";
 
-export default function ProjectsGrid() {
+export default function ProjectsGrid({ showViewAll = false}) {
   return (
-    <section className="py-12 px-12">
+    <section className="py-12 px-12 flex flex-col justify-center items-center">
       <h2 className="text-3xl md:text-5xl font-bold mb-6">Projects</h2>
       <p className="text-white text-md md:text-[16.5px] md:w-1/2 mt-5">Find out about my works: read through my case studies,
           have a look at final designs and try out web applications I’ve built.</p>
@@ -47,6 +47,13 @@ export default function ProjectsGrid() {
           </article>
         ))}
       </div>
+      {showViewAll && (
+        <div>
+          <Link className="underline hover:text-[#C1F025]" href="/projects">
+            View all projects
+          </Link>
+        </div>
+      )}
     </section>
   );
 }

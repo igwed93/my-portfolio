@@ -1,4 +1,4 @@
-/*import ProjectsGrid from "@/components/Home.Components/ProjectsGrid";
+import ProjectsGrid from "@/components/Home.Components/ProjectsGrid";
 
 export default function ProjectsPage() {
   return (
@@ -6,4 +6,4 @@ export default function ProjectsPage() {
       <ProjectsGrid />
     </main>
   );
-}*/
+}
