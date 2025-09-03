@@ -1,36 +1,102 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# My Portfolio
+
+Welcome to my personal portfolio site! This project showcases my professional experience, technical skills, and personal projects. You can view the deployed version at [my-portfolio-olive-mu-82.vercel.app](https://my-portfolio-olive-mu-82.vercel.app).
+
+## Table of Contents
+
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Deployment](#deployment)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+
+---
+
+## Features
+
+- Responsive design for desktop and mobile devices
+- Interactive UI to showcase projects and skills
+- Easy-to-update project and experience sections
+- Fast, modern web technologies
+- Hosted on Vercel for optimal performance
+
+## Tech Stack
+
+- **TypeScript:** Main language for type-safe code
+- **Framework:** (Add your main framework, e.g. Next.js, React)
+- **Styling:** (e.g. Tailwind CSS, styled-components)
+- **Deployment:** Vercel
+
+*Update this section with additional packages, libraries, or tools as relevant.*
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Node.js (v18+ recommended)
+- npm or yarn
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/igwed93/my-portfolio.git
+   cd my-portfolio
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. Start the development server:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
 
-## Learn More
+4. Visit [http://localhost:3000](http://localhost:3000) in your browser.
 
-To learn more about Next.js, take a look at the following resources:
+## Usage
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Update your profile, projects, and experience in the appropriate files/components.
+- Customize the theme and content as desired.
+- Commit and push changes to update the live site (if linked to Vercel or another CI/CD platform).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deployment
 
-## Deploy on Vercel
+This portfolio is deployed to [Vercel](https://vercel.com/):
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Connect your GitHub repository to Vercel.
+2. Set up build settings (usually automatic for common frameworks).
+3. On push to `master`, changes will deploy automatically.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+*You can also deploy on Netlify, GitHub Pages, or your favorite hosting provider.*
+
+## Contributing
+
+Contributions are welcome! Please open issues or submit pull requests for improvements or bug fixes.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/YourFeature`)
+3. Commit your changes (`git commit -am 'Add new feature'`)
+4. Push to the branch (`git push origin feature/YourFeature`)
+5. Open a Pull Request
+
+## License
+
+*No license specified yet. Please add a license if you intend to share or have others contribute.*
+
+## Contact
+
+- GitHub: [igwed93](https://github.com/igwed93)
+- Portfolio: [my-portfolio-olive-mu-82.vercel.app](https://my-portfolio-olive-mu-82.vercel.app)
+
+---
+
+Feel free to customize this README to match your portfolio’s features, stack, and workflow!
