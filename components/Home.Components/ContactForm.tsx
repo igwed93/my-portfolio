@@ -35,7 +35,7 @@ export default function ContactForm() {
     };
 
     return (
-        <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 max-w-md mx-auto">
+        <form onSubmit={handleSubmit(onSubmit)} className="w-full space-y-4 max-w-md mx-auto">
             <div>
                 <label className="block text-sm font-medium p-2">Name</label>
                 <input
@@ -69,7 +69,7 @@ export default function ContactForm() {
             <button
                 type="submit"
                 disabled={isSubmitting}
-                className="px-4 py-2 bg-[#C1F025] text-black font-semibold rounded-md"
+                className="px-4 py-2 bg-[#C1F025] text-black font-semibold rounded-md hover:bg-[#A4D007] transition duration-200"
             >
                 {isSubmitting ? "Sending..." : "Send Message"}
             </button>
