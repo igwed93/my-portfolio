@@ -4,7 +4,7 @@ import { FaTwitter, FaWhatsapp, FaLinkedin, FaEnvelope, FaWpforms } from "react-
 export default function ContactLinks({ showContactForm = true }) {
   return (
     <div className="mt-4 text-sm text-gray-400 flex flex-col gap-2 items-center">
-      <h2 className="text-xl">Let's get in touch!</h2>
+      <h2 className="text-xl">{"Let's get in touch!"}</h2>
       <div className="flex gap-4 mt-2">
         {/* Twitter */}
         <Link
