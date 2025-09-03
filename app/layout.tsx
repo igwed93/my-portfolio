@@ -24,7 +24,7 @@ export const metadata: Metadata = {
       "Cybersecurity + full-stack development (Node.js, Express.js, Next.js). Projects: Blog API, Task Manager API, E-commerce API, UNN site clone.",
     url: "https://your-domain.com",
     siteName: "Daniel Igwe",
-    images: [{ url: "/og.png", width: 1200, height: 630 }], // provide image
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }], // provide image
     locale: "en_US",
     type: "website",
   },
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: "Daniel Igwe – Cybersecurity & Full-Stack Developer",
     description:
       "Secure systems + full-stack builds. Backend @ Remote Health (telemedicine).",
-    images: ["/og.png"], // provide image
+    images: ["/og-image.png"], // provide image
   },
   alternates: { canonical: "/" },
 };
