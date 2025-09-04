@@ -4,9 +4,11 @@ import { MobileMenu } from "@/components/Home.Components/client-comps";
 
 export function NavBar() {
     return (
-        <header className="bg-black flex justify-between items-center px-4 py-6 md:px-8 md:py-10 shadow-md md:pr-30 sticky top-0 z-50">
+        <header className="bg-black flex justify-between items-center px-4 py-6 lg:px-8 lg:py-10 shadow-md lg:pr-30 sticky top-0 z-50">
             <h1 className="text-2xl text-white font-bold">Daniel Igwe</h1>
-            <nav className="hidden md:flex gap-8 space-x-4 items-center text-base">
+
+            {/* Desktop Nav - now starts at lg */}
+            <nav className="hidden lg:flex gap-8 space-x-4 items-center text-base">
                 {Links.map((link, index) => (
                     <Link
                         key={index}
@@ -21,7 +23,8 @@ export function NavBar() {
                     </Link>
                 ))}
             </nav>
-            {/* Only renders the client menu for mobile */}
+
+            {/* Mobile Menu - visible until lg */}
             <MobileMenu links={Links} />
         </header>
     );

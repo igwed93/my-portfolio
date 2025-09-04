@@ -38,19 +38,20 @@ export function MobileMenu({ links }: { links: { title: string; href: string }[]
     const [open, setOpen] = useState(false);
 
     return (
-        <div className="md:hidden relative">
+        <div className="lg:hidden relative">
             <button className="text-3xl" onClick={() => setOpen(!open)}>
                 <span className={`material-symbols-outlined ${open ? "text-[#C1F025]" : "text-white"}`}>
                     menu
                 </span>
             </button>
+
             {open && (
-                <div className="fixed top-0 right-0 w-[50vw] h-full bg-black z-40 flex flex-col items-center py-6 shadow-lg opacity-90">
+                <div className="fixed top-0 right-0 w-[60vw] sm:w-[50vw] h-full bg-black z-40 flex flex-col items-center py-6 shadow-lg opacity-95">
                     {links.map((link, index) => (
                         <Link
                             key={index}
                             href={link.href}
-                            className="text-[#C1F025] py-2 px-4 w-full text-center border-b border-gray-800 hover:bg-yellow-200 hover:text-black transition"
+                            className="text-[#C1F025] py-3 px-4 w-full text-center border-b border-gray-800 hover:bg-[#C1F025] hover:text-black transition"
                             onClick={() => setOpen(false)}
                         >
                             {link.title}
